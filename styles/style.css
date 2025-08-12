@@ -1,0 +1,388 @@
+
+/* Color Variable */
+:root {
+  --main-color: #3a6cf4;
+  --background-color:#dadada;
+  --hover-color: #601cfc;
+}
+
+/* Add Fonts */
+@font-face {
+  font-family: poppins;
+  src: url(../assets/fonts/Poppins-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: poppins;
+  src: url(../assets/fonts/Poppins-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: poppins;
+  src: url(../assets/fonts/Poppins-MediumItalic.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: poppins ;
+  src: url(../assets/fonts/Poppins-Bold.ttf) format("truetype");
+  font-weight: 700;
+}
+
+/* Reset settings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: poppins , sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Start Components */
+.section-title {
+  text-align: center;
+  padding-block: 1rem;
+  color: var(--main-color);
+  font-weight: 700;
+  font-size: 1rem;
+  position: relative;
+}
+
+@media (min-width: 375px) {
+  .section-title {
+  font-size: 1.4rem;
+  }
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  border: 2px solid var(--main-color);
+  width: 10%;
+  left: 50%;
+  bottom: 10%;
+  transform: translate(-50%, -50%);
+}
+
+.wrapper {
+  padding-inline: 1rem;
+  margin: auto;
+}
+/* End Components */
+
+
+/* Start Header */
+header {
+  padding: 0.5rem;
+  background:linear-gradient(90deg,#8d8d8d, #e7e7e7);
+  height: 5.75rem;  /* 92px */
+}
+
+header .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+}
+
+header .logo {
+  display: block;
+  max-width: 100%;
+  aspect-ratio: 1/1;
+  width: 65px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+header .header-icon {
+  font-size: 2.5rem;
+  padding: 0.5rem;
+  display: none;
+  cursor: pointer;
+}
+
+header .links {
+  display: flex;
+  gap: 1rem;
+}
+
+header .links a {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--main-color);
+}
+
+header .links a:hover {
+  color: var(--hover-color);
+}
+
+@media (max-width: 575px) {
+  header .header-icon{
+    display: block;
+  }
+
+  header .links {
+    display: none;
+  }
+
+  .menu:hover .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    margin-top: 3rem;
+    top: 2rem;
+    right: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: var(--background-color);
+  }
+}
+
+/* Start Intro */
+.intro {
+  color: var(--main-color);
+  text-align: center;
+  width: 100%;
+  min-height: calc(100vh - 5.75rem);
+  background: url(../assets/images/647a4002-36cf-4a07-b398-959d17f9c0fb.png) no-repeat;
+  background-size: cover;
+  background-position:center;
+  background-color:rgba(244, 244, 244, 0.92); 
+  background-attachment: fixed;
+  background-blend-mode: overlay;
+}
+
+.intro h1 {
+  padding-block: 0.5rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.intro h3 {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.intro blockquote {
+  margin-block: 0.75rem;
+  font-size: 1rem;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.intro figure {
+  margin-block: 2.5rem;
+}
+
+.intro img {
+  width: 100px;
+  height: auto;
+}
+
+@media (min-width: 376px) {
+  .intro img {
+    width: 150px;
+    height: auto;
+  }
+}
+
+@media (min-width: 576px) {
+  .intro h1 {
+    padding-block: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .intro h3 {
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+
+  .intro blockquote {
+    margin-block: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  .intro figure {
+    margin-block: 2.5rem;
+  }
+
+  .intro img {
+    width: 150px;
+    height: auto;
+  }
+}
+/* End Intro */
+
+/* Start About */
+.about p {
+  margin-block: 1rem;
+  font-weight: 400;
+}
+/* End About */
+
+/* Start Skills */
+.skills {
+  background-color: var(--background-color);
+}
+
+.skills p {
+  margin-block: 0.75rem;
+}
+
+.skills caption {
+  caption-side: bottom;
+  margin-block: 0.5rem;
+}
+
+table {
+  width: 60%;
+  margin-inline: auto;
+}
+
+table, th, td {
+  border:1px solid black;
+  text-align: center;
+  padding:0.25rem;
+}
+
+table tbody>tr:first-child>td:nth-child(2){
+  color: orange;
+}
+
+table tbody>tr:nth-child(2)>td:nth-child(2){
+  color: blue;;
+}
+
+table tbody>tr:nth-child(3)>td:nth-child(2){
+  color: yellow;
+}
+
+table tbody>tr:nth-child(4)>td:nth-child(2){
+  color:darkorchid
+}
+
+table tbody>tr:nth-child(5)>td:nth-child(2){
+  color:cornflowerblue;
+}
+/* End Skills */
+
+/* Start Projects */
+.projects h2 + P {
+  margin-block: 0.5rem;
+}
+
+.projects .content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.projects .card {
+  width: 10rem;
+  box-shadow: 0 5px 5px rgba(1 1 1  /0.25);
+  transition: transform 0.4s;
+}
+
+.projects .card:hover {
+  transform: scale(1.1);
+}
+
+.projects .card .desc {
+  padding: 0.5rem;
+}
+
+.projects .card img {
+  width: 100%;
+  height: 10rem;
+}
+
+.projects .card h3 {
+  color: var(--main-color);
+  font-weight: 700;
+}
+
+.projects .card p {
+  text-align: right;
+}
+/* End Projects */
+
+/* Start Contact */
+.contact {
+  background-color: var(--background-color);
+}
+
+form {
+  width: 70%;
+  margin-inline: auto;
+  padding-block: 1rem;
+}
+
+form fieldset {
+  padding: 0.5rem;
+}
+
+form fieldset input  {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+form fieldset textarea {
+  display: block;
+  width: 80%;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  font-size:medium;
+  border-radius: 5px;
+  color: white;
+  background-color: var(--main-color);
+}
+
+/* End Contact */
+
+/* Start Footer */
+
+footer {
+  text-align: center;
+  background:linear-gradient(90deg,#8d8d8d, #e7e7e7);
+  padding-block: 1rem;
+}
+
+footer p:first-child {
+  color: var(--main-color);
+  font-weight: 500;
+}
+
+footer .brands {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+footer .brands a {
+  display: block;
+  color: black;
+  cursor: pointer;
+}
+
+footer .brands a:nth-child(2) {
+  color: var(--main-color);
+}
+
+footer .brands a:nth-child(3) {
+  color: var(--main-color);
+}
+/* End Footer */

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hossam Portfolio</title>
+    <link rel="stylesheet" href="./styles/all.min.css">
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <img class="logo" src="./assets/images/Logo-3d.jpg" alt="my-logo">
+        <div class="menu">
+          <div class="header-icon">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <nav class="links">
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact Me</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="intro">
+      <div class="wrapper">
+        <h1>Welcome to My Portfolio</h1>
+        <h3>Hi, I'm Hossam Hussein</h3>
+        <h3>a React Frontend web developer</h3>
+        <blockquote>
+          "Always motivated to work hard and deliver my best."
+        </blockquote>
+        <figure>
+          <img src="./assets/images/profile-img.jpg" alt="Profile Picture">
+        </figure>
+      </div>
+    </section>   
+
+    <section class="about" id="about">
+      <div class="wrapper">
+        <h2 class="section-title">About Me</h2>
+        <p>I am a React web developer with a keen interest in building and creating beautiful and functional websites. I have a background in computer science and a passion for coding.</p>
+        <p>In my free time, I enjoy learning new technologies and improving my skills.</p>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <div class="wrapper">
+        <h2 class="section-title">Skills</h2>
+        <p>I have experience in the following technologies:</p>
+        <table>
+          <colgroup>
+            <col style="background-color: aliceblue;">
+            <col style="background-color: white;">
+            <col style="background-color: aliceblue;">
+          </colgroup>
+          <caption>These skills help me build modern and responsive web applications</caption>
+          <thead>
+            <tr>
+              <th>The Skill</th>
+              <th>The Icon</th>
+              <th>The Progress</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HTML</td>
+              <td><i class="fa-brands fa-html5 fa-2x"></i></td>
+              <td>90%</td>
+            </tr>
+        
+            <tr>
+              <td>CSS</td>
+              <td><i class="fa-brands fa-css3-alt fa-2x"></i></td>
+              <td>50%</td>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td><i class="fa-brands fa-square-js fa-2x"></i></td>
+              <td>50%</td>
+            </tr>
+            <tr>
+              <td>Bootstrap</td>
+              <td><i class="fa-brands fa-bootstrap fa-2x"></i></td>
+              <td>50%</td>
+            </tr>
+            <tr>
+              <td>React</td>
+              <td><i class="fa-brands fa-react fa-2x"></i</td>
+              <td>50%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="wrapper">
+        <h2 class="section-title">Projects</h2>
+        <p>Here are some of the projects I've worked on:</p>
+        <div class="content">
+          <div class="card">
+            <figure>
+              <img src="./assets/images/Task-manger.jpg" alt="">
+            </figure>
+            <div class="desc">
+              <h3>Task Manager</h3>
+              <p><a href="#">More Details</a></p>
+            </div>
+          </div>
+          <div class="card">
+            <figure>
+              <img src="./assets/images/Ecommerce.png" alt="">
+            </figure>
+            <div class="desc">
+              <h3>E-Commerse</h3>
+              <p><a href="#">More Details</a></p>
+            </div>
+          </div>
+          <div class="card">
+            <figure>
+              <img src="./assets/images/Social-media.png" alt="">
+            </figure>
+            <div class="desc">
+              <h3>Social Media</h3>
+              <p><a href="#">More Details</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="wrapper">
+        <h2 class="section-title">Contact Me</h2>
+        <p style="font-family: Arial, sans-serif; color: #555;">If you have any questions or would like to work together, please fill out the form below:</p>
+        <form action="#" method="post" autocomplete="on">
+          <fieldset>
+            <legend>Personal Data</legend>
+            <label for="fname">Your Name:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="Add Your Name" required autofocus><br>
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age" placeholder="Add Your Age" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Add Your Email" required><br>
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender">
+              <option>Male</option>
+              <option>Female</option>
+            </select>
+            <div class="submit-buttons">
+              <button type="submit">Send</button>
+            <button type="reset">Reset</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrapper">
+        <p>&copy; 2025 Hossam Hussein. All rights reserved.</p>
+        <p>Email:
+          <a href="mailto:">hossamthabet4@gmail.com</a>.
+        </p>
+        <p>Follow me on: </p>
+        <div class="brands">
+            <a href="#">
+              Twitter <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="#">
+              LinkedIn <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="#">
+              Facebook <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="#">
+              GitHub <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./scripts/all.min.js"></script>
+  </body>
+</html>

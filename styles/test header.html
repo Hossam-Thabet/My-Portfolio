@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mobile-First Responsive Header</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+    position: relative;
+  }
+
+  /* Logo (menu icon) */
+  .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  /* Navbar (hidden by default in mobile view) */
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    background: #333;
+    padding: 10px;
+    border-radius: 4px;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: background 0.3s;
+  }
+
+  nav a:hover {
+    background: #555;
+    border-radius: 4px;
+  }
+
+  /* Show navbar when hovering logo OR navbar itself (small screens) */
+  .logo:hover + nav,
+  nav:hover {
+    display: flex;
+  }
+
+  /* Larger screens: hide logo, show navbar inline */
+  @media (min-width: 769px) {
+    .logo {
+      display: none;
+    }
+    nav {
+      display: flex;
+      position: static;
+      flex-direction: row;
+      gap: 15px;
+      background: none;
+      padding: 0;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">☰</div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+</body>
+</html>
