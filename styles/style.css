@@ -94,7 +94,7 @@ header .logo {
   display: block;
   max-width: 100%;
   aspect-ratio: 1/1;
-  width: 65px;
+  width: 4rem;
   border-radius: 50%;
   cursor: pointer;
 }
